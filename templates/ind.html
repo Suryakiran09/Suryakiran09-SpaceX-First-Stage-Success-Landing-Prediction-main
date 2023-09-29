@@ -1,0 +1,131 @@
+<html>   
+   <head>
+    <center><h1 class="title">SpaceX first landing success Prediction</h1></center>
+
+    <style media="screen">
+        span{
+          color:red;
+        
+     }
+     .title{
+      color : white;
+     }
+     .result{
+      font-size: 22px;
+     }
+       .div1{
+        background-color: rgba(96, 107, 109, 0.939);
+         border:1px solid rgb(253, 255, 253);
+         width:50%;
+         background-position: center;
+       }
+       main{
+         background-color: aquamarine;
+       }
+       body{
+            background: url(./space.jpeg);
+            background-color: blue;
+        }
+ 
+     </style>
+
+    
+</head>
+<body> 
+
+   <center>
+    <div class="div1">
+      <p><center>This is a web application for predicting the rocket landing</center> </p>
+      <center>
+          <form action = "/login" method = "post">
+      
+            <center><label for="payload">Payload Mass : </label>
+                <input type="number" name="py" ></center>  <br>
+              
+            <center><label for = "orbit" >  Orbit :  </label> 
+              <input type="number" name="or" ></center>  <br>
+            <center><label for = "outcome" >  Outcome :  </label> 
+            <input type="number" name="ou" ></center>  <br>
+            <label for = "GridFins" >  GridFins :  </label> 
+              <select name = "g">
+                <option disabled selected>Select</option>
+              <option Value = "1">True</option>
+              <option Value = "0">False</option>
+              </select>   <br>
+      
+              <br>
+            <label for = "Reused" >  Reused :  </label> 
+            <select name = "r">
+                <option disabled selected>Select</option>
+            <option Value = "1">True</option>
+            <option Value = "0">False</option>
+            </select>   <br>
+    
+            <br>
+            <label for = "Legs" >  Legs :  </label> 
+              <select name = "l">
+                <option disabled selected>Select</option>
+              <option Value = "1">True</option>
+              <option Value = "0">False</option>
+              </select>   <br>
+      
+              <br>
+            <label for = "LandingPad" >  LandingPad :  </label> 
+            <select name = "L">
+                <option disabled selected>Select</option>
+            <option Value = "5">5</option>
+            <option Value = "4">4</option>
+            <option Value = "3">3</option>
+            <option Value = "2">2</option>
+            <option Value = "1">1</option>
+            <option Value = "0">0</option>
+            </select>   <br>
+    
+            <br>
+            <label for = "Block" >Block :  </label> 
+            <select name = "B">
+                <option disabled selected>Select</option>
+            <option Value = "5">5</option>
+            <option Value = "4">4</option>
+            <option Value = "3">3</option>
+            <option Value = "2">2</option>
+            <option Value = "1">1</option>
+            </select>   <br>
+    
+            <br>
+            <label for = "ReusedCount" >  ReusedCount :  </label> 
+            <select name = "R">
+                <option disabled selected>Select</option>
+            <option Value = "5">5</option>
+            <option Value = "4">4</option>
+            <option Value = "3">3</option>
+            <option Value = "2">2</option>
+            <option Value = "1">1</option>
+            <option Value = "0">0</option>
+            </select>   <br>
+            <br/>
+            <center><label for="serial">Serial : </label>
+                <input type="text" name="se" ></center>  <br>
+             
+              
+                  <center><label for="longitude">Longitude : </label>
+                      <input type="text" name="lo" ></center>  <br>
+                <center><label for="latitude">Latitude : </label>
+                <input type="text" name="la" ></center>  <br>
+              <p><input type = "submit" value = "Submit" /> </p>
+      
+          </form>
+          <b class = result>{{Y}}</b>
+      </center>
+  </div>
+   </center> 
+
+
+
+</body>
+</html>
+
+
+
+
+
